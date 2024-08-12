@@ -20,13 +20,13 @@
 <body>
     <h1>Study with pomodoro ღ</h1>
     <label for="checkbox" class = "toggler"> <!--bouton changement thème-->
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox" class="theme-toggler-checkbox">
         <span class="ball"></span>
         <i class="fa-regular fa-sun"></i>
         <i class="fa-regular fa-moon"></i>
     </label>
 
-    <div class="all">
+    <div class="all jour">
         
         <div class="section"> <!-- section To do List -->
             <div class = "todolist">
@@ -38,7 +38,13 @@
                     <i class="fa-solid fa-circle-plus"></i>
                     </button>
                 </div>
-            
+
+                <div class = "filters">
+                    <div class = "filter" data-filter="completed">Completed</div>
+                    <div class = "filter" data-filter="pending">Incompleted</div>
+                    <div class = "delete-all">Deleted All</div>
+                </div>
+
                 <div class = "todos-container">
                     <ul class="todos"></ul>
                   <img class="dog-image" src="./dog.svg">
@@ -48,7 +54,7 @@
 
         <div class= "section" > <!-- section pomodoro -->
             <div class = "app">
-                <div class="app-pomodoro jour">
+                <div class="app-pomodoro">
              
                  <div class = "pannel">
                      <tr>
@@ -68,7 +74,7 @@
                     <div class = "buttons">
                          <button id="start">start</button>
                             <button id="pause" style="display:none;">pause</button>
-                            <button id="reset"><i class="fa-solid fa-rotate-left" style="color: #672768;"></i></button>
+                            <button id="reset"><i class="fa-solid fa-rotate-left"></i></button>
                     </div>
                 </div>
             </div>
